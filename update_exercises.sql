@@ -11,7 +11,7 @@ SELECT name FROM albums
 WHERE release_date < 1980;
 
 UPDATE albums
-SET release_date = release_date - 1000;
+SET release_date = release_date - 100;
 
 SELECT release_date FROM albums;
 
