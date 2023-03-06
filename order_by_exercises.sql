@@ -5,11 +5,13 @@ FROM employees
 WHERE (first_name = 'Maya'
     OR first_name = 'Irena'
     OR first_name = 'Vidya')
-  AND gender = 'M';
+  AND gender = 'M'
+ORDER BY last_name, first_name DESC;
 
 SELECT *
 FROM employees
-WHERE last_name LIKE 'e%';
+WHERE last_name LIKE 'e%'
+ORDER BY emp_no DESC;
 
 SELECT last_name
 FROM employees
